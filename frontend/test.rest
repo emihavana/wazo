@@ -1,0 +1,14 @@
+### sending a GET request to the root endpoint
+GET http://localhost:3000/ 
+
+###
+GET http://localhost:3000/api/data
+### sending a POST request to create a new user
+POST http://localhost:3000/api/data
+Content-Type: application/json
+
+{
+  "name": "Emillio"
+}
+### sending request to delete a user 
+DELETE http://localhost:3000/api/data
