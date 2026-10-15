@@ -622,6 +622,11 @@ details[open] summary {
     transform: none;
     opacity: 0.6;
 }
+.tab-button-logout{
+    color: var(--color-error);
+    background: var(--background-primary);
+    border: 1px solid var(--color-error);
+}
 
 
 @media (min-width: 640px) {

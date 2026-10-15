@@ -1,0 +1,38 @@
+### testing home route at endpoint /
+GET http://localhost:3000
+
+### test user registration at endpoint /auth/register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+###test user login at endpoint /auth/login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+### test getting todos at endpoint /todos 
+GET http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTc5MjAyODk2MywiZXhwIjoxNzkyMTE1MzYzfQ.70CFDbA7NyiNmfwNhTHvd99gFXNLNG75kyNjeOwpZ-Y
+#### test creating a todo at endpoint /todos
+POST http://localhost:3000/todos  
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTc5MjAyODk2MywiZXhwIjoxNzkyMTE1MzYzfQ.70CFDbA7NyiNmfwNhTHvd99gFXNLNG75kyNjeOwpZ-Y
+Content-Type: application/json
+
+{
+  "task": "Test Todo"
+}
+#### test updating a todo at endpoint /todos/:id
+PUT http://localhost:3000/todos/2
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ0ZXN0dXNlciIsImlhdCI6MTc5MjAyODk2MywiZXhwIjoxNzkyMTE1MzYzfQ.70CFDbA7NyiNmfwNhTHvd99gFXNLNG75kyNjeOwpZ-Y
+Content-Type: application/json
+
+{
+  "completed": "1"
+}

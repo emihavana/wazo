@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": " a simple backend for a web application",
   "main": "src/index.js",
-  "scripts": {
-    "dev": "nodemon --watch . --ext js src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
+    "scripts": {
+  "dev": "nodemon --watch src --ext js,env --exec \"node --env-file=.env\" src/index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
